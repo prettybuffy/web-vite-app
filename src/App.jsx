@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import siteLogo from '/logo.png'
+import siteLogo from '/site_logo.png'
 import './App.css'
 import Header from './pages/Header.jsx';
 import Profile from './pages/Profile.jsx';
