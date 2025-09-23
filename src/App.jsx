@@ -1,11 +1,12 @@
 import { useState } from 'react'
 import reactLogo from './img/react.svg'
-import viteLogo from '/vite.svg'
+import siteLogo from '/logo.png'
 import './App.css'
+import Header from './pages/Header.jsx';
 
-function App() {
-  const [count, setCount] = useState(0)
 
+/*function App() {
+   const [count, setCount] = useState(0)
   return (
     <>
       <div>
@@ -32,4 +33,22 @@ function App() {
   )
 }
 
-export default App
+export default App*/
+
+function App() {
+  return (
+    <div className="min-h-screen bg-slate-50">
+      <Header />
+      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
+          <div className="lg:col-span-3">
+          </div>
+          <div className="lg:col-span-1">
+          </div>
+        </div>
+      </main>
+    </div>
+  );
+}
+
+export default App;
