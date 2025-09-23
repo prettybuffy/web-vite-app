@@ -1,5 +1,5 @@
 import React from 'react';
-import { FileText } from 'lucide-react';
+import pdfLogo from '/pdf_icon.svg'
 
 const papers = [
   {
@@ -59,13 +59,12 @@ export default function Research() {
         
       <div className="space-y-4">
         {papers.map((paper, index) => (
-          <div key={index} className="flex gap-4">
-            {<div className="flex-shrink-0">
-              <div className="w-12 h-16 bg-pink-0 border border-red-pink rounded flex items-center justify-center relative">
-                <FileText className="w-6 h-6 text-pink-600" />
-                <span className="text-xs text-pink-600 font-medium absolute bottom-1">PDF</span>
+          <div key={index} className="flex gap-2">
+            <div className="flex-shrink-0">
+              <div className="w-12 h-16 flex items-center justify-center">
+                <img src={pdfLogo} alt="PDF Logo" />
               </div>
-            </div>}
+            </div>   
             
             <div className="flex-1">
               <h3 className="font-medium hover:text-pink-600 cursor-pointer">
