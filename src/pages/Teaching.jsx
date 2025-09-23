@@ -29,7 +29,7 @@ export default function Teaching() {
               <React.Fragment key={index}>
                 <a 
                   href={course.link} 
-                  className="text-blue-600 hover:underline text-sm"
+                  className="text-pink-600 hover:underline text-sm"
                 >
                   {course.semester}
                 </a>
@@ -48,7 +48,7 @@ export default function Teaching() {
               <React.Fragment key={index}>
                 <a 
                   href={seminar.link} 
-                  className="text-blue-600 hover:underline text-sm"
+                  className="text-pink-600 hover:underline text-sm"
                 >
                   {seminar.semester}
                 </a>
