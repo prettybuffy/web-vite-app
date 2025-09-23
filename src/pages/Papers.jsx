@@ -1,45 +1,79 @@
 import React from 'react';
+import { FileText } from 'lucide-react';
 
 const papers = [
   {
-    title: "How LLM Counselors Violate Ethical Standards in Mental Health Practice: A Practitioner-Informed Framework",
-    authors: "Zainab Iftikhar, Amy Xiao, Sean Ransom, Jeff Huang, Harini Suresh",
-    venue: "AAAI/AIES 2025",
-    /*award: "(Best Paper Award)",*/
+    title: "Therapy as an NLP Task: Psychologists' Comparison of LLMs and Human Peers in CBT",
+    authors: "Zainab Iftikhar, Sean Ransom, Amy Xiao, Nicole Nugent, Jeff Huang",
+    venue: "(under review) 2025",
+    website: "[website]",
     link: "#"
   },
   {
-    title: "Multimodal AI for Human-Computer Collaboration",
-    authors: "David Kim, Sarah Chen, Jennifer Liu, Alex Thompson",
-    venue: "ICML 2024",
+    title: "How LLM Counselors Violate Ethical Standards in Mental Health Practice: A Practitoner-Informed Framework",
+    authors: "Zainab Iftikhar, Amy Xiao, Sean Ransom, Jeff Huang, Harini Suresh",
+    venue: "AAAI/AIES 2025",
+    /*award: "(Best Paper Award)",*/
+    link: "/src/files/AIES25_Framework.pdf"
+  },
+    {
+    title: "Tone Indicators: Designing Accessible CMC Cues for Neurodiverse Users",
+    authors: "Amy Xiao✧, Zainab Iftikhar✧, Jeff Huang",
+    venue: "CSCW 2025",
+    link: "/src/files/AIES25_Framework.pdf"
+  },
+  {
+    title: "Machine and Human Understanding of Empathy in Online Peer Support: A Cognitive Behavioral Approach",
+    authors: "Sara Syed✧, Zainab Iftikhar✧, Amy Xiao, Jeff Huang",
+    venue: "CHI 2024",
     website: "[website]",
+    link: "#"
+  },
+  {
+    title: "“Together but not together”: Evaluating Typing Indicators for Interaction-Rich Communication",
+    authors: "Zainab Iftikhar, Yumeng Ma, Jeff Huang",
+    venue: "CHI 2023",
+    website: "[website]",
+    link: "#"
+  },
+  {
+    title: "Technology, Privacy, and User Opinions of COVID-19 Mobile Apps for Contact Tracing: Systematic Search and Content Analysis",
+    authors: "Mahmoud Elkhodr, Omar Mubin, Zainab Iftikhar, Maleeha Masood, Belal Alsinglawi, Suleman Shahid, Fady Alnajjar",
+    venue: "JMIR 2021",
+    link: "#"
+  },
+  {
+    title: "Designing Parental Monitoring and Control Technology: A Systematic Review",
+    authors: "Zainab Iftikhar, Qutaiba Rohan ul Haq, Osama Younus, Taha Sardar, Hammad Arif, Mobin Javed, Suleman Shahid",
+    venue: "INTERACT 2021",
     link: "#"
   }
 ];
 
 export default function Research() {
   return (
-    <section className="p-4">
-      <h2 className="text-xl font-medium text-slate-700 mb-4">
-        Recent Publications</h2>
-      
+    <section className="p-4 text-slate-700">
+      <h2 className="text-xl font-medium">
+        Recent Publications </h2>
+        <p className='text-sm mb-4'>(✧ denotes equal contribution)</p>
+        
       <div className="space-y-4">
         {papers.map((paper, index) => (
           <div key={index} className="flex gap-4">
-            {/*<div className="flex-shrink-0">
-              <div className="w-12 h-16 bg-red-0 border border-red-300 rounded flex items-center justify-center relative">
-                <div className="w-6 h-6 text-red-600" />
-                <span className="text-xs text-red-600 font-medium absolute bottom-1">PDF</span>
+            {<div className="flex-shrink-0">
+              <div className="w-12 h-16 bg-pink-0 border border-red-pink rounded flex items-center justify-center relative">
+                <FileText className="w-6 h-6 text-pink-600" />
+                <span className="text-xs text-pink-600 font-medium absolute bottom-1">PDF</span>
               </div>
-            </div>*/}
+            </div>}
             
             <div className="flex-1">
-              <h3 className="text-pink-600 hover:underline cursor-pointer">
+              <h3 className="font-medium hover:text-pink-600 cursor-pointer">
                 {paper.title}
               </h3>
-              <p className="text-slate-700">{paper.authors}</p>
+              <p className="">{paper.authors}</p>
               <div className="flex items-center gap-2">
-                <span className="text-slate-700">{paper.venue}</span>
+                <span className="">{paper.venue}</span>
                 {paper.award && (
                   <span className="text-orange-600 font-medium">{paper.award}</span>
                 )}
