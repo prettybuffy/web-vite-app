@@ -2,11 +2,11 @@ import React from 'react';
 
 export default function Header() {
   return (
-    <header className="bg-neutral-800 text-white">
+    <header className="bg-neutral-800 text-slate-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-2">
           <div>
-            <h1 className="px-4 text-2xl font-light">Zainab Iftikhar</h1>
+            <h1 className="px-4 text-3xl font-light">Zainab Iftikhar</h1>
             {/*<p className="px-4 text-sm">Computer Science Ph.D. Student</p>*/}
           </div>
           <div className="text-right">
@@ -15,13 +15,13 @@ export default function Header() {
         </div>
       </div>
       
-      <nav className="bg-slate-50">
+      <nav className="bg-neutral-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex space-x-6">
-            <a href="#" className="px-4 py-3 text-black hover:text-lime-600 transition-colors">Home</a>
-            <a href="#" className="px-4 py-3 text-black hover:text-lime-600 transition-colors">Research</a>
-            <a href="#" className="px-4 py-3 text-black hover:text-lime-600 transition-colors">Teaching</a>
-            <a href="#" className="px-4 py-3 text-black hover:text-lime-600 transition-colors">Blog</a>
+          <div className="flex space-x-6 font-medium text-slate-700">
+            <a href="#" className="px-4 py-3 hover:text-pink-600 transition-colors">Home</a>
+            <a href="#" className="px-4 py-3 hover:text-pink-600 transition-colors">Research</a>
+            <a href="#" className="px-4 py-3 hover:text-pink-600 transition-colors">Teaching</a>
+            <a href="#" className="px-4 py-3 hover:text-pink-600 transition-colors">Blog</a>
           </div>
         </div>
       </nav>
