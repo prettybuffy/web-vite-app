@@ -3,6 +3,7 @@ import siteLogo from '/logo.png'
 import './App.css'
 import Header from './pages/Header.jsx';
 import Profile from './pages/Profile.jsx';
+import Papers from './pages/Papers.jsx';
 
 
 /*function App() {
@@ -43,6 +44,7 @@ function App() {
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
           <div className="lg:col-span-3">
           <Profile />
+          <Papers />
           </div>
           <div className="lg:col-span-1">
           </div>
