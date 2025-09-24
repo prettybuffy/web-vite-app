@@ -4,6 +4,7 @@ import Profile from './pages/Profile.jsx';
 import About from './pages/About.jsx';
 import Papers from './pages/Papers.jsx';
 import Teaching from './pages/Teaching.jsx';
+import News from './pages/News.jsx';
 import './App.css';
 
 const HomePage = () => (
