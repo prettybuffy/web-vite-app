@@ -13,7 +13,7 @@ const papers = [
   {
     title: "Therapy as an NLP Task: Psychologists' Comparison of LLMs and Human Peers in CBT",
     authors: "Zainab Iftikhar, Sean Ransom, Amy Xiao, Nicole Nugent, Jeff Huang",
-    venue: "(under review) 2025",
+    venue: "preprint 2024",
     website: "https://cheeseburgertherapy.org",
     pdf: "/papers/LLM_Therapy.pdf",
     doi: "https://arxiv.org/abs/2409.02244"
@@ -60,8 +60,8 @@ const papers = [
 
 export default function Research() {
   return (
-    <section className="p-4 text-slate-700">
-      <h2 className="text-xl font-medium">
+    <section className="p-4">
+      <h2 className="text-xl font-normal">
         Recent Publications </h2>
         <p className='text-sm mb-4'>(✧ denotes equal contribution)</p>
         
@@ -82,7 +82,7 @@ export default function Research() {
             </a>
               <p className="">{paper.authors}</p>
               <div className="flex items-center gap-2">
-                <span className="">{paper.venue}</span>
+                <span className="italic">{paper.venue}</span>
                 {paper.award && (
                   <span className="text-orange-600 font-medium">{paper.award}</span>
                 )}

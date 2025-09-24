@@ -17,7 +17,7 @@ export default function Header() {
       
       <nav className="bg-neutral-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex space-x-6 font-medium text-slate-700">
+          <div className="flex space-x-6 font-normal text-slate-800">
             <a href="#" className="px-4 py-3 hover:text-highlight transition-colors">Home</a>
             <a href="#" className="px-4 py-3 hover:text-highlight transition-colors">Research</a>
             <a href="#" className="px-4 py-3 hover:text-highlight transition-colors">Teaching</a>

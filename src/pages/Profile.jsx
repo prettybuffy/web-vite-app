@@ -1,6 +1,6 @@
 export default function Profile() {
   return (
-    <section className="p-4 mb-4 bg-">
+    <section className="p-4">
       <div className="flex flex-col lg:flex-row gap-6">
         <div className="flex-shrink-0">
           <img 
@@ -12,7 +12,7 @@ export default function Profile() {
         
         <div className="flex-1">
           <div className="mb-2">
-            <p className="text-slate-700 leading-relaxed mb-4">
+            <p className="leading-relaxed mb-4">
               I'm a 5th Year Computer Science PhD Candidate at Brown University, advised by{' '}
               <a href="https://jeffhuang.com" className="text-highlight">Jeff Huang </a> 
               in the {' '}
@@ -26,7 +26,7 @@ export default function Profile() {
               for my work on integrating AI into human-centered mental health counseling.
             </p>
             
-            <p className="text-slate-700 leading-relaxed">
+            <p className="leading-relaxed">
               I received my undergraduate degree in Computer Science from National University of Computer & Emerging Sciences. 
               Before joining Brown, I was a Research Associate in HCI for Inclusion, Well-being & Learning Lab where I build and deployed
               assistive systems to support the marginalized population of Global South in healthcare, education and legal aid against
