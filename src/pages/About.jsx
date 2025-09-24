@@ -22,7 +22,11 @@ export default function About() {
             Before joining Brown, I was a Research Associate in HCI for Inclusion, Well-being & Learning Lab where I build and deployed
             assistive systems to support the marginalized population of Global South in healthcare, education and legal aid against
             domestic violence. {/*I have also interned at Google Research working 
-            on large language models and multimodal AI systems.*/}
+            on large language models and multimodal AI systems.*/}</p>
+          <p className="leading-relaxed mt-2">
+            <a  href="https://scholar.google.com" target="_blank" 
+            rel="noopener noreferrer" 
+            className="text-highlight hover:underline">[Google Scholar]</a>
           </p>
         </div>
       </div>
