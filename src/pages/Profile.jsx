@@ -3,7 +3,7 @@ export default function Profile() {
     <section className="p-4">
       <div className="flex-shrink-0 flex flex-col">
         <img 
-          src="/src/img/zainab.png"
+          src="/img/zainab.png"
           alt="Zainab Iftikhar"
           className="w-48 h-48 object-cover rounded-full shadow-md"
         />

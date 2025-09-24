@@ -1,5 +1,5 @@
 import React from 'react';
-import pdfLogo from '/pdf_icon.svg'
+import pdfLogo from '/img/pdf_icon.svg'
 
 const papers = [
  {
