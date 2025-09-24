@@ -3,21 +3,25 @@ import Header from './pages/Header.jsx';
 import Profile from './pages/Profile.jsx';
 import About from './pages/About.jsx';
 import Papers from './pages/Papers.jsx';
+import Teaching from './pages/Teaching.jsx';
 import './App.css';
 
 const HomePage = () => (
-  <div className="grid grid-cols-1 lg:grid-cols-4 gap-12">
+  <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
     <div className="lg:col-span-1">
       <Profile />
     </div>
-    <div className="lg:col-span-3">
+    <div className="lg:col-span-2">
       <About />
+    </div>
+    <div className="lg:col-span-1">
+      <Teaching />
     </div>
   </div>
 );
 
 const PublicationsPage = () => (
-  <div className="grid grid-cols-1 lg:grid-cols-4 gap-12">
+  <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
     <div className="lg:col-span-1">
       <Profile />
     </div>
