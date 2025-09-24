@@ -17,49 +17,36 @@ const seminars = [
 
 export default function Teaching() {
   return (
-    <div className="space-y-6">
-      
-      <section className="bg-white rounded-lg shadow-sm p-6">
-        <h2 className="text-xl font-medium text-slate-800 mb-6">Teaching</h2>
-        
-        <div className="mb-8">
-          <h3 className="font-medium text-slate-800 mb-3">Machine Learning Systems</h3>
-          <div className="flex flex-wrap gap-1">
-            {courses.map((course, index) => (
-              <React.Fragment key={index}>
-                <a 
-                  href={course.link} 
-                  className="text-pink-600 hover:underline text-sm"
-                >
-                  {course.semester}
-                </a>
-                {index < courses.length - 1 && (
-                  <span className="text-slate-400 text-sm">, </span>
-                )}
-              </React.Fragment>
-            ))}
+    <div className="bg-white rounded-lg shadow-md">
+      <div className="p-6">
+        <h2 className="text-2xl font-bold text-primary mb-4">Teaching</h2>
+        <div className="space-y-4">
+          <div>
+            <h3 className="font-semibold text-lg text-primary mb-2">Machine Learning Systems</h3>
+            <ul className="list-disc list-inside text-secondary space-y-1">
+              {courses.map((course, index) => (
+                <li key={index}>
+                  <a href={course.link} className="text-accent hover:underline">
+                    {course.semester}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div>
+            <h3 className="font-semibold text-lg text-primary mb-2">AI Ethics Seminar</h3>
+            <ul className="list-disc list-inside text-secondary space-y-1">
+              {seminars.map((seminar, index) => (
+                <li key={index}>
+                  <a href={seminar.link} className="text-accent hover:underline">
+                    {seminar.semester}
+                  </a>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
-        
-        <div>
-          <h3 className="font-medium text-slate-800 mb-3">AI Ethics Seminar</h3>
-          <div className="flex flex-wrap gap-1">
-            {seminars.map((seminar, index) => (
-              <React.Fragment key={index}>
-                <a 
-                  href={seminar.link} 
-                  className="text-pink-600 hover:underline text-sm"
-                >
-                  {seminar.semester}
-                </a>
-                {index < seminars.length - 1 && (
-                  <span className="text-slate-400 text-sm">, </span>
-                )}
-              </React.Fragment>
-            ))}
-          </div>
-        </div>
-      </section>
+      </div>
     </div>
   );
 }
