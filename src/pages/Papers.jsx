@@ -61,8 +61,8 @@ const papers = [
 export default function Research() {
   return (
     <section className="p-4">
-      <h2 className="text-xl font-normal">
-        Recent Publications </h2>
+      <h2 className="text-2xl font-normal">
+         Papers </h2>
         <p className='text-sm mb-4'>(✧ denotes equal contribution)</p>
         
       <div className="space-y-4">
