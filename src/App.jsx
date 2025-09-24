@@ -14,6 +14,7 @@ const HomePage = () => (
     </div>
     <div className="lg:col-span-2">
       <About />
+      <News />
     </div>
     <div className="lg:col-span-1">
       <Teaching />
