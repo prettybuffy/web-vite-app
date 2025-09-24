@@ -12,12 +12,12 @@ const news = [
     date: "Aug 08, 2025"
  },
  {
-    title: "🎓 Spotlighted in Brown’s “Student Stories”",
+    title: "Spotlighted in Brown’s “Student Stories”",
     date: "May 14, 2025"
   },
   {
     title: "Zainab Iftikhar: Helping humans use artificial intelligence to better support mental health",
-    publisher: "Brown",
+    publisher: "Brown News",
     link: "https://www.brown.edu/news/2025-05-14/iftikhar",
     date: "May 14, 2025"
   },
@@ -33,7 +33,7 @@ const news = [
   },
   {
     title: "Brown CS PhD Student Zainab Iftikhar Asks How Machines Understand Empathy",
-    venue: "Brown CS",
+    publisher: "Brown CS",
     link: "https://blog.cs.brown.edu/2024/05/09/brown-cs-student-zainab-iftikhar-asks-how-machines-understand-empathy/",
     date: "May 17, 2024"
   },
@@ -87,8 +87,8 @@ export default function News() {
                 {news.title}
               </h3>
             </a>
-                {news.venue && (
-                  <span className="italic">{news.venue}</span>
+                {news.publisher && (
+                  <span className="italic">{news.publisher} </span>
                 )}
                 {news.link && (
                   <a href={news.link} className="text-highlight hover:underline">
