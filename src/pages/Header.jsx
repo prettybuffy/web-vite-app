@@ -21,8 +21,8 @@ export default function Header() {
           <div className="flex space-x-2 font-normal text-slate-800">
             <Link to="/" className="px-4 py-3 hover:text-highlight transition-colors">Home</Link>
             <Link to="/papers" className="px-4 py-3 hover:text-highlight transition-colors">Papers</Link>
-            <Link to="/research" className="px-4 py-3 hover:text-highlight transition-colors">Systems</Link>
-            <Link to="/blog" className="px-4 py-3 hover:text-highlight transition-colors">Blog</Link>
+            <Link to="/projects" className="px-4 py-3 hover:text-highlight transition-colors">Projects</Link>
+            <Link to="/teaching" className="px-4 py-3 hover:text-highlight transition-colors">Teaching</Link>
           </div>
         </div>
       </nav>
