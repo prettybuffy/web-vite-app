@@ -23,7 +23,7 @@ const papers = [
     authors: "Amy Xiao✧, Zainab Iftikhar✧, Jeff Huang",
     venue: "CSCW 2025",
     pdf: "/papers/ToneIndicators_CSCW25.pdf",
-    doi: ""
+    doi: "https://doi.org/10.1145/3757677"
   },
   {
     title: "Machine and Human Understanding of Empathy in Online Peer Support: A Cognitive Behavioral Approach",
