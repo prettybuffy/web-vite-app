@@ -13,7 +13,7 @@ const papers = [
   {
     title: "Therapy as an NLP Task: Psychologists' Comparison of LLMs and Human Peers in CBT",
     authors: "Zainab Iftikhar, Sean Ransom, Amy Xiao, Nicole Nugent, Jeff Huang",
-    venue: "preprint 2024",
+    venue: "preprint 2025",
     website: "https://cheeseburgertherapy.org",
     pdf: "/papers/LLM_Therapy.pdf",
     doi: "https://arxiv.org/abs/2409.02244"
@@ -24,6 +24,13 @@ const papers = [
     venue: "CSCW 2025",
     pdf: "/papers/ToneIndicators_CSCW25.pdf",
     doi: "https://doi.org/10.1145/3757677"
+  },
+  {
+    title: "Re-imagining Mental Health Access: The Role of Human, AI and Design",
+    authors: "Zainab Iftikhar",
+    venue: "CSCW 2024",
+    pdf: "/papers/DC_CSCW24.pdf",
+    doi: "https://dl.acm.org/doi/abs/10.1145/3678884.3682056"
   },
   {
     title: "Machine and Human Understanding of Empathy in Online Peer Support: A Cognitive Behavioral Approach",
@@ -41,6 +48,13 @@ const papers = [
     website: "https://github.com/brownhci/live-typing",
     pdf: "/papers/LiveTyping_CHI23.pdf",
     doi: "https://dl.acm.org/doi/10.1145/3544548.3581248"
+  },
+  {
+    title: "Child-Computer Interaction in the Global South: Designing for Children on the Margins",
+    authors: "Suleman Shahid, Zainab Iftikhar, Rabiah Arshad, Omar Mubin, Abdullah Al Mahmud",
+    venue: "IDC 2021",
+    pdf: "papers/ChildrenMargin_IDC21.pdf",
+    doi: "https://dl.acm.org/doi/abs/10.1145/3459990.3460518"
   },
   {
     title: "Technology, Privacy, and User Opinions of COVID-19 Mobile Apps for Contact Tracing: Systematic Search and Content Analysis",
