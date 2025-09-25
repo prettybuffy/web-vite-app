@@ -5,7 +5,7 @@ export default function Profile() {
         <img 
           src="/img/zainab.png"
           alt="Zainab Iftikhar"
-          className="w-48 h-48 object-cover rounded-full shadow-md"
+          className="w-48 h-64 object-cover shadow-md"
         />
       <div className="mt-4">
         <h2 className="font-semibold">Contact</h2>

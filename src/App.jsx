@@ -8,22 +8,19 @@ import News from './pages/News.jsx';
 import './App.css';
 
 const HomePage = () => (
-  <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
-    <div className="lg:col-span-1">
+  <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
+    <div className="lg:col-span-1 mx-auto">
       <Profile />
     </div>
     <div className="lg:col-span-2">
       <About />
       <News />
     </div>
-    <div className="lg:col-span-1">
-      <Teaching />
-    </div>
   </div>
 );
 
 const PublicationsPage = () => (
-  <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
+  <div className="grid grid-cols-1 lg:grid-cols-4 gap-4">
     <div className="lg:col-span-1">
       <Profile />
     </div>
