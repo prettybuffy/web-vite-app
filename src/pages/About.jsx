@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <section className="p-4">
+    <section>
       <div className="flex-1">
         <div className="mb-2">
           <p className="leading-relaxed mb-4">

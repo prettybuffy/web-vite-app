@@ -1,6 +1,6 @@
 export default function Profile() {
   return (
-    <section className="p-4">
+    <section>
       <div className="flex-shrink-0 flex flex-col">
         <img 
           src="/img/zainab.png"

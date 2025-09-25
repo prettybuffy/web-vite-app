@@ -74,7 +74,7 @@ const news = [
 
 export default function News() {
   return (
-    <section className="p-4">
+    <section>
       <h2 className="text-2xl font-normal">
          News, Press, Awards & More </h2>
         
