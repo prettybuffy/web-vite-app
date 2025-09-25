@@ -18,7 +18,7 @@ export default function Header() {
         </div>
       </div>
       
-      <nav className="bg-blue-900 text-slate-100">
+      <nav className="bg-neutral-100 text-slate-800">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex font-normal">
             <Link to="/" className="pr-4 py-3 hover:text-highlight transition-colors">Home</Link>
