@@ -3,9 +3,9 @@ export default function Profile() {
     <section>
       <div className="flex-shrink-0 flex flex-col">
         <img 
-          src="/img/zainab.png"
+          src="/img/zainab.jpg"
           alt="Zainab Iftikhar"
-          className="w-64 object-cover mx-autoshadow-md"
+          className="w-72 py-1 object-cover mx-autoshadow-md"
         />
       <div className="mt-2">
         <h2 className="font-semibold">Contact</h2>
