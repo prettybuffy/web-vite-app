@@ -16,9 +16,9 @@ function App() {
         <main className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-4 font-light text-slate-800">
           <Routes>
             <Route path="/" element={ <MainLayout sidebar={<Profile />}
-                  content={<> <About /> <hr/> <News /> </> } layoutType="home" />}/>
+                  content={<> <About /> <hr/> <News /> </> } layoutType="home" /> }/>
             <Route path="/papers" element={ <MainLayout sidebar={<Profile />}
-                  content={<Papers />} layoutType="papers"/>}/>
+                  content={<Papers />} layoutType="papers" /> }/>
           </Routes>
         </main>
       </div>
