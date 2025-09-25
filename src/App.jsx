@@ -5,41 +5,20 @@ import About from './pages/About.jsx';
 import Papers from './pages/Papers.jsx';
 import Teaching from './pages/Teaching.jsx';
 import News from './pages/News.jsx';
+import MainLayout from './pages/MainLayout.jsx';
 import './App.css';
-
-const HomePage = () => (
-  <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
-    <div className="lg:col-span-1 mx-auto">
-      <Profile />
-    </div>
-    <div className="lg:col-span-2">
-      <About />
-      <News />
-    </div>
-  </div>
-);
-
-const PublicationsPage = () => (
-  <div className="grid grid-cols-1 lg:grid-cols-4 gap-4">
-    <div className="lg:col-span-1">
-      <Profile />
-    </div>
-    <div className="lg:col-span-3">
-      <Papers />
-    </div>
-  </div>
-);
 
 function App() {
   return (
     <Router>
       <div className="min-h-screen bg-neutral-100">
         <Header />
-        <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 
-        font-light text-slate-800">
+        <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 font-light text-slate-800">
           <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/papers" element={<PublicationsPage />} />
+            <Route path="/" element={ <MainLayout sidebar={<Profile />}
+                  content={<> <About /> <News /> </> } layoutType="home" />}/>
+            <Route path="/papers" element={ <MainLayout sidebar={<Profile />}
+                  content={<Papers />} layoutType="papers"/>}/>
           </Routes>
         </main>
       </div>
