@@ -5,6 +5,7 @@ import About from './pages/About.jsx';
 import Papers from './pages/Papers.jsx';
 import Teaching from './pages/Teaching.jsx';
 import News from './pages/News.jsx';
+import Projects from './pages/Projects.jsx';
 import MainLayout from './pages/MainLayout.jsx';
 import './App.css';
 
@@ -19,6 +20,8 @@ function App() {
                   content={<> <About /> <hr/> <News /> </> } layoutType="home" /> }/>
             <Route path="/papers" element={ <MainLayout sidebar={<Profile />}
                   content={<Papers />} layoutType="papers" /> }/>
+            <Route path="/projects" element={ <MainLayout sidebar={<Profile />}
+                  content={<Projects />} layoutType="projects" /> }/>
           </Routes>
         </main>
       </div>
