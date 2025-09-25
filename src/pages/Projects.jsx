@@ -19,7 +19,7 @@ const projects = [
     //How has someone’s communication style evolved? Which relationships have grown or faded? This work investigates how personal 
     //data can serve as a mirror, helping people make sense of their digital histories in meaningful ways.
     //This work explores how personal data can serve as a mirror, enabling meaningful self-reflection through everyday digital traces.`,
-    systems: "Sochiatrist: An accessible chat-based platform that provides peer support through Cognitive Behavioral Therapy (CBT) to scale mental health, a collaboration with the Cheese team.",
+    systems: "Sochiatrist: An ML-driven system for extracting, analyzing and visualizing social messaging to support data-driven self-reflection.",
     link: "#",
   },
   {
@@ -28,6 +28,7 @@ const projects = [
     This line of my research explores customizable designs that balance information needs with privacy and autonomy. It focuses on improving communication accessibility by introducing expressive typing indicators and tone cues to increase 
     social presence while reducing message-based cognitive 
     load.`, //Using mixed methods, the work highlights how tailored cues can enhance clarity, confidence, and social connection, with implications for inclusive messaging design.`,
+    systems: "Live Typing: Real-time typing indicators designed to increasing social presence in messaging platforms.",
     link: "#",
     publications: "related publications: CHI'23, CSCW'25"
 
