@@ -5,15 +5,15 @@ export default function About() {
         <div className="mb-2">
           <p className="leading-relaxed mb-4">
             I'm a 5th Year Computer Science PhD Candidate at Brown University, advised by{' '}
-            <a href="https://jeffhuang.com" className="text-highlight">Jeff Huang </a> 
+            <a href="https://jeffhuang.com" className="text-emphasis hover:text-highlight">Jeff Huang </a> 
             in the {' '}
-            <a href="https://jeffhuang.com/hci/" className="text-highlight"> HCI Lab. </a> My research 
-            focuses on {' '} <span className="text-highlight">developing personalised systems</span>{' '} including AI agents,
+            <a href="https://jeffhuang.com/hci/" className="text-emphasis hover:text-highlight"> HCI Lab. </a> My research 
+            focuses on {' '} <span className="text-emphasis">developing personalised systems</span>{' '} including AI agents,
             to support users' physical, cognitive, 
             and emotional well-being. By applying computational and visualisation 
             techniques to user's health and communication data, my work aims to help individuals understand their behaviors
             and how such behaviors impact their physical, social and mental health.
-            I received the Paris Kanellakis Graduate Fellowship Award and was <a href="https://www.brown.edu/news/2025-05-14/iftikhar" className="text-highlight">featured in Brown’s "Student Stories" </a>
+            I received the Paris Kanellakis Graduate Fellowship Award and was <a href="https://www.brown.edu/news/2025-05-14/iftikhar" className="text-emphasis hover:text-highlight">featured in Brown’s "Student Stories" </a>
             for my work on integrating AI into human-centered mental health counseling.
           </p>
           
@@ -26,7 +26,7 @@ export default function About() {
           <p className="leading-relaxed mt-2">
             <a  href="https://scholar.google.com" target="_blank" 
             rel="noopener noreferrer" 
-            className="text-highlight hover:underline">[Google Scholar]</a>
+            className="text-emphasis hover:text-highlight">[Google Scholar]</a>
           </p>
         </div>
       </div>

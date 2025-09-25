@@ -5,9 +5,9 @@ export default function Profile() {
         <img 
           src="/img/zainab.png"
           alt="Zainab Iftikhar"
-          className="w-48 h-64 object-cover shadow-md"
+          className="w-64 object-cover mx-autoshadow-md"
         />
-      <div className="mt-4">
+      <div className="mt-2">
         <h2 className="font-semibold">Contact</h2>
         <p className="">Zainab Iftikhar, PhD Student</p>
         <p className="">Email: zainab_iftikhar@brown.edu</p>

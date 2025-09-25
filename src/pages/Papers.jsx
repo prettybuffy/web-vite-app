@@ -90,7 +90,7 @@ export default function Research() {
             
             <div className="flex-1">
             <a href={paper.doi}>
-              <h3 className="text-highlight hover:underline cursor-pointer">
+              <h3 className="text-emphasis hover:text-highlight cursor-pointer">
                 {paper.title}
               </h3>
             </a>
@@ -101,7 +101,7 @@ export default function Research() {
                   <span className="text-orange-600 font-medium">{paper.award}</span>
                 )}
                 {paper.website && (
-                  <a href={paper.website} className="text-highlight hover:underline">
+                  <a href={paper.website} className="text-emphasis hover:text-highlight">
                     [website]
                   </a>
                 )}

@@ -83,7 +83,7 @@ export default function News() {
           <div key={index} className="flex gap-2">            
             <div className="flex-1">
             <a href={news.link}>
-              <h3 className="hover:underline cursor-pointer">
+              <h3 className="cursor-pointer">
                 {news.title}
               </h3>
             </a>
@@ -91,7 +91,7 @@ export default function News() {
                   <span className="italic">{news.publisher} </span>
                 )}
                 {news.link && (
-                  <a href={news.link} className="text-highlight hover:underline">
+                  <a href={news.link} className="text-emphasis hover:text-highlight">
                     [Read More]
                   </a>
                 )}
