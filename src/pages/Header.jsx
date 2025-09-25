@@ -19,7 +19,7 @@ export default function Header() {
       </div>
       
       <nav className="bg-blue-900 text-slate-100">
-        <div className="max-w-5xl mx-auto sm:px-6 lg:px-8">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex font-normal">
             <Link to="/" className="py-3 hover:text-highlight transition-colors">Home</Link>
             <Link to="/papers" className="px-4 py-3 hover:text-highlight transition-colors">Papers</Link>
