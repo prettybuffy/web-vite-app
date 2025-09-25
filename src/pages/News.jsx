@@ -2,13 +2,13 @@ import React from 'react';
 
 const news = [
  {
+    title: "Nominated (twice!) as 1 of 4 PhD Students University-Wide at Brown for Google PhD Fellowship (Year 2024, Year 2025)",
+    date: "Aug 30, 2025"
+ },
+ {
     title: "How AI Supports Student Mental Health in Higher Education",
     publisher: "ED Tech",
     link: "https://edtechmagazine.com/higher/how-ai-supports-student-mental-health-in-higher-education-perfcon",
-    date: "Aug 08, 2025"
- },
- {
-    title: "Nominated (twice!) as 1 of 4 PhD Students University-Wide at Brown for Google PhD Fellowship (Year 2024, Year 2025)",
     date: "Aug 08, 2025"
  },
  {
@@ -22,35 +22,35 @@ const news = [
     date: "May 14, 2025"
   },
   {
-    title: "Selected for the 2024 CSCW Doctoral Consortium (San José, Costa Rica)",
+    title: "Selected for the 2024 CSCW Doctoral Consortium", //(San José, Costa Rica)
     publisher: "CSCW",
     date: "Aug 17, 2024"
   },
  {
-    title: "Can AI understand empathy? See our talk at CHI’24 (Hawaii, USA)",
+    title: "Can AI understand empathy? See our talk at CHI’24", //(Hawaii, USA)
     link: "https://www.youtube.com/watch?v=9NX7uDciJe8",
     date: "May 17, 2024"
   },
   {
-    title: "Brown CS PhD Student Zainab Iftikhar Asks How Machines Understand Empathy",
+    title: "PhD Student Zainab Iftikhar Asks How Machines Understand Empathy",
     publisher: "Brown CS",
     link: "https://blog.cs.brown.edu/2024/05/09/brown-cs-student-zainab-iftikhar-asks-how-machines-understand-empathy/",
     date: "May 17, 2024"
   },
   {
-    title: "I received the Paris Kanellakis Graduate Fellowship Award for the Academic Year 2023-2024!",
+    title: "Received the Paris Kanellakis Graduate Fellowship Award (2023-2024)",
     publisher: "",
     date: "May 06, 2024",
   },
   {
-    title: "Invited to talk about The Role of Human, AI and Design in Mental Health Access",
+    title: "Invited Talk: The Role of Human, AI & Design in Mental Health Access",
     publisher: "Carnegie Mellon University",
     date: "Jan 22, 2024"
   },
   {
-    title: "What Are You Typing? Enhancing Digital Communication Through Rich Typing Indicators",
+    title: "Enhancing Digital Communication Through Rich Typing Indicators",
     link: "https://posts.cs.brown.edu/2023/07/11/what-are-you-typing-enhancing-digital-communication-through-rich-typing-indicators/",
-    pubisher: "Brown CS",
+    publisher: "Brown CS",
     date: "July 11, 2023"
   },
   {
@@ -58,7 +58,7 @@ const news = [
     date: "May 31, 2023"
   },
   {
-    title: "Can typing indicators improve task performance and online collaboration? See my talk at CHI’23 (Hamburg, Germany)",
+    title: "Can typing indicators improve task performance & online collaboration?",// See my talk at CHI’23 (Hamburg, Germany)",
     link: "https://www.youtube.com/watch?v=SQ4VQey6zcI",
     date: "Apr 27, 2023"
   },
@@ -79,22 +79,24 @@ export default function News() {
          News, Press, Awards & More </h2>
         
       <div className="space-y-4 mt-4">
-        {news.map((news, index) => (
-          <div key={index} className="flex gap-2">            
+        {news.map((item, index) => (
+          <div key={index} className="flex items-start gap-4">
+            <p className="py-0.5 text-sm font-normal text-gray-500">{item.date}</p>
             <div className="flex-1">
-            <a href={news.link}>
-              <h3 className="cursor-pointer">
-                {news.title}
-              </h3>
-            </a>
-                {news.publisher && (
-                  <span className="italic">{news.publisher} </span>
+              <div>
+                {item.publisher && (
+                  <p className="italic text-emphasis">{item.publisher}</p>
                 )}
-                {news.link && (
-                  <a href={news.link} className="text-emphasis hover:text-highlight">
-                    [Read More]
-                  </a>
-                )}
+                <p>
+                  {item.link ? (
+                    <a href={item.link} className="hover:text-highlight">
+                      {item.title}
+                    </a>
+                  ) : (
+                    item.title
+                  )}
+                </p>
+              </div>
             </div>
           </div>
         ))}
