@@ -20,9 +20,11 @@ export default function About() {
           <p className="leading-relaxed">
             I received my undergraduate degree in Computer Science from National University of Computer & Emerging Sciences. 
             Before joining Brown, I was a Research Associate in HCI for Inclusion, Well-being & Learning Lab where I build and deployed
-            assistive systems to support the marginalized population of Global South in healthcare, education and legal aid against
-            domestic violence. {/*I have also interned at Google Research working 
-            on large language models and multimodal AI systems.*/}</p>
+            assistive systems to support the marginalized population of Global South in  
+            {' '}<a href="https://corona.assisted.pk/en" className="text-emphasis hover:text-highlight">healthcare</a>,
+            {' '}<a href="https://autism.assisted.pk/en" className="text-emphasis hover:text-highlight">education</a> and
+            {' '}<a href="https://humqadam.shirkatgah.org/" className="text-emphasis hover:text-highlight">legal aid</a> against
+            gender-based violence.</p>
           <p className="leading-relaxed mt-2">
             <a  href="https://scholar.google.com/citations?user=x9GuCAQAAAAJ&hl=en" target="_blank" 
             rel="noopener noreferrer" 
