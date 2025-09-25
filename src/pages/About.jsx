@@ -24,7 +24,7 @@ export default function About() {
             domestic violence. {/*I have also interned at Google Research working 
             on large language models and multimodal AI systems.*/}</p>
           <p className="leading-relaxed mt-2">
-            <a  href="https://scholar.google.com" target="_blank" 
+            <a  href="https://scholar.google.com/citations?user=x9GuCAQAAAAJ&hl=en" target="_blank" 
             rel="noopener noreferrer" 
             className="text-emphasis hover:text-highlight">[Google Scholar]</a>
           </p>
