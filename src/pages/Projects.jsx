@@ -47,7 +47,7 @@ export default function Projects() {
         {projects.map((project, index) => (
           <div key={index}>
             <h3 className="font-semibold">{project.title}</h3>
-            <blockquote className="border-l-4 border-gray-300 pl-4 mt-2 text-gray-600 italic">
+            <blockquote className="border-l-4 border-gray-300 pl-4 mt-2 text-gray-600">
               {project.description}
             </blockquote>
             <a href={project.link} className="text-blue-600 hover:underline mt-2 inline-block">
