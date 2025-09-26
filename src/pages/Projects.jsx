@@ -42,7 +42,7 @@ const projects = [
     This line of my research explores customizable designs that balance information needs with privacy and autonomy. It focuses on improving communication accessibility by introducing expressive typing indicators and tone cues to increase 
     social presence while reducing message-based cognitive 
     load.`, //Using mixed methods, the work highlights how tailored cues can enhance clarity, confidence, and social connection, with implications for inclusive messaging design.`,
-    systems: "💬 Live Typing: Real-time typing indicators designed to increasing social presence in messaging platforms.",
+    systems: "💬 Live Typing: Real-time typing indicators to increase social presence in messaging platforms.",
     link: "https://github.com/brownhci/live-typing",
     publications: "related publications: CHI'23, CSCW'25",
     type: "past"

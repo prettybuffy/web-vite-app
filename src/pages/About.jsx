@@ -8,14 +8,16 @@ export default function About() {
             <a href="https://jeffhuang.com" className="text-emphasis hover:text-highlight">Jeff Huang </a> 
             in the {' '}
             <a href="https://jeffhuang.com/hci/" className="text-emphasis hover:text-highlight"> HCI Lab. </a> My research 
-            focuses on {' '} <span className="text-emphasis">developing personalised systems</span>{' '} including AI agents,
+            focuses on {' '} <a href="/projects" className="text-emphasis hover:text-highlight">developing personalised systems</a>{' '} including AI agents,
             to support users' physical, cognitive, 
             and emotional well-being. By applying computational and visualisation 
-            techniques to user's health and communication data, my work aims to help individuals understand their behaviors
-            and how such behaviors impact their physical, social and mental health.
+            techniques to user's health and communication data, my work aims to a) help individuals understand their behaviors
+            and how such behaviors impact their physical, social and mental health and b) how can we integrate AI into user's daily routines including workplace.
             I received the Paris Kanellakis Graduate Fellowship Award and was <a href="https://www.brown.edu/news/2025-05-14/iftikhar" className="text-emphasis hover:text-highlight">featured in Brown’s "Student Stories" </a>
             for my work on integrating AI into human-centered mental health counseling.
           </p>
+          
+
           
           <p className="leading-relaxed">
             I received my undergraduate degree in Computer Science from National University of Computer & Emerging Sciences. 
