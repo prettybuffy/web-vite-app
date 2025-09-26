@@ -2,14 +2,25 @@ import React from 'react';
 
 const projects = [
   {
-    title: "Responsible Human-AI Collaboration for Scalable Mental Health",
+    title: "Integrating Responsible AI into the Workplace",
+    description: `As AI systems are adopted across workplaces (from programming to healthcare) they are reshaping decision-making, collaboration, and task delegation. 
+    This research examines how organizations can responsibly integrate AI into daily workflows while preserving human oversight, accountability, and trust. 
+    We study real-world deployments to assess the opportunities and risks of AI augmentation across sectors, including mental health. Using ethnographic studies, policy analysis, and design research, 
+    we explore how to embed AI into organizational cultures in ways that enhance human expertise and judgment.`,
+    link: "#",
+    publications: "related publications: AAAI'25, CHI'24, CSCW'24",
+    type: "ongoing"
+  },
+  {
+    title: "Human-AI Collaboration for Scalable Mental Health",
     description: `Large Language Models (LLMs) are increasingly being used as ad-hoc therapists, often in ways that may lead users to overestimate the roles these systems can safely assume. 
     What does it mean to responsibly use AI to support mental health? How can we build AI systems that augment not replace human mental health providers?
     I have been exploring these questions from a Responsible AI perspective, in collaboration with clinical psychologists, AI ethicists, and mental health organizations. 
     Here are some of our ongoing efforts—both systems and frameworks—to better understand and situate AI's role in scaling therapy.`,
     system: "Cheeseburger Therapy: An accessible chat-based platform that provides peer support through Cognitive Behavioral Therapy (CBT) to scale mental health, a collaboration with the Cheese team.",
     link: "#",
-    publications: "related publications: AAAI'25, CHI'24, CSCW'24"
+    publications: "related publications: AAAI'25, CHI'24, CSCW'24",
+    type: "ongoing"
   },
   {
     title: "ML-Driven Personal Data Visualization for Social and Behavioral Insights",
@@ -21,6 +32,7 @@ const projects = [
     //This work explores how personal data can serve as a mirror, enabling meaningful self-reflection through everyday digital traces.`,
     systems: "Sochiatrist: An ML-driven system for extracting, analyzing and visualizing social messaging to support data-driven self-reflection.",
     link: "#",
+    type: "ongoing"
   },
   {
     title: "Accessible Cues for Increasing Social Presence in Messaging Platforms",
@@ -30,8 +42,8 @@ const projects = [
     load.`, //Using mixed methods, the work highlights how tailored cues can enhance clarity, confidence, and social connection, with implications for inclusive messaging design.`,
     systems: "Live Typing: Real-time typing indicators designed to increasing social presence in messaging platforms.",
     link: "#",
-    publications: "related publications: CHI'23, CSCW'25"
-
+    publications: "related publications: CHI'23, CSCW'25",
+    type: "past"
   }
 ];
 
