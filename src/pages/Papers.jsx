@@ -3,7 +3,7 @@ import pdfLogo from '/img/pdf_icon.svg'
 
 const papers = [
  {
-    title: "How LLM Counselors Violate Ethical Standards in Mental Health Practice: A Practitoner-Informed Framework",
+    title: "How LLM Counselors Violate Ethical Standards in Mental Health Practice: A Practitioner-Informed Framework",
     authors: "Zainab Iftikhar, Amy Xiao, Sean Ransom, Jeff Huang, Harini Suresh",
     venue: "AAAI/AIES 2025",
     /*award: "(Best Paper Award)",*/
