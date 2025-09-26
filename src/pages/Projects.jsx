@@ -49,54 +49,65 @@ const projects = [
   }
 ];
 
-const ongoingProjects = projects.filter(p => p.type === "ongoing");
-const pastProjects = projects.filter(p => p.type === "past");
-
-function ProjectCard({ project }) {
-  return (
-    <div>
-      <h3 className="font-semibold">{project.title}</h3>
-      <blockquote className="border-l-4 border-gray-300 pl-4 mt-2 text-gray-600">
-        {project.description}
-      </blockquote>
-      <div className="mt-2 space-y-2">
-        {(project.system || project.systems) && (
-          <a
-            href={project.link}
-            className="inline-flex items-center gap-2 bg-blue-50 text-blue-700 px-2 py-1 rounded-md text-sm font-medium hover:bg-blue-100 transition"
-          >
-            <span className="bg-blue-200 text-blue-800 px-1.5 py-0.5 rounded-md text-xs font-semibold">
-              {project.system || project.systems}
-            </span>
-          </a>
-        )}
-        {project.publications && (
-          <div className="publication-style">{project.publications}</div>
-        )}
-      </div>
-    </div>
-  );
-}
-
-function ProjectSection({ title, projects }) {
-  return (
-    <>
-      <h2 className="text-2xl font-normal mt-10">{title}</h2>
-      <div className="space-y-8 mt-4">
-        {projects.map((project, index) => (
-          <ProjectCard key={index} project={project} />
-        ))}
-      </div>
-    </>
-  );
-}
+const ongoingProjects = projects.filter(p => p.type === 'ongoing');
+const pastProjects = projects.filter(p => p.type === 'past');
 
 export default function Projects() {
   return (
     <section>
-      <ProjectSection title="Active Projects" projects={ongoingProjects} />
-      <ProjectSection title="Past Projects" projects={pastProjects} />
+      <h2 className="text-2xl font-normal">Active Projects</h2>
+      <div className="space-y-8 mt-4">
+        {ongoingProjects.map((project, index) => (
+          <div key={index}>
+            <h3 className="font-semibold">{project.title}</h3>
+            <blockquote className="border-l-4 border-gray-300 pl-4 mt-2 text-gray-600">
+              {project.description}
+            </blockquote>
+            <div className="mt-2 space-y-2">
+              {(project.system || project.systems) && (
+                <a
+                  href={project.link}
+                  className="inline-flex items-center gap-2 bg-blue-50 text-blue-700 px-2 py-1 rounded-md text-sm font-medium hover:bg-blue-100 transition"
+                >
+                  <span className="bg-blue-200 text-blue-800 px-1.5 py-0.5 rounded-md text-xs font-semibold">
+                    {project.system || project.systems}
+                  </span>
+                </a>
+              )}
+              {project.publications && (
+                <div className="text-sm font-semibold">{project.publications}</div>
+              )}
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <h2 className="text-2xl font-normal mt-10">Past Projects</h2>
+      <div className="space-y-8 mt-4">
+        {pastProjects.map((project, index) => (
+          <div key={index}>
+            <h3 className="font-semibold">{project.title}</h3>
+            <blockquote className="border-l-4 border-gray-300 pl-4 mt-2 text-gray-600">
+              {project.description}
+            </blockquote>
+            <div className="mt-2 space-y-2">
+              {(project.system || project.systems) && (
+                <a
+                  href={project.link}
+                  className="inline-flex items-center gap-2 bg-blue-50 text-blue-700 px-2 py-1 rounded-md text-sm font-medium hover:bg-blue-100 transition"
+                >
+                  <span className="bg-blue-200 text-blue-800 px-1.5 py-0.5 rounded-md text-xs font-semibold">
+                    {project.system || project.systems}
+                  </span>
+                </a>
+              )}
+              {project.publications && (
+                <div className="text-sm font-semibold">{project.publications}</div>
+              )}
+            </div>
+          </div>
+        ))}
+      </div>
     </section>
   );
 }
-
