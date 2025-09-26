@@ -7,8 +7,7 @@ const projects = [
     This research examines how organizations can responsibly integrate AI into daily workflows while preserving human oversight, accountability, and trust. 
     We study real-world deployments to assess the opportunities and risks of AI augmentation across sectors, including mental health. Using ethnographic studies, policy analysis, and design research, 
     we explore how to embed AI into organizational cultures in ways that enhance human expertise and judgment.`,
-    link: "#",
-    publications: "related publications: AAAI'25, CHI'24, CSCW'24",
+    publications: "related publications: AAAI'25 (framework)",
     type: "ongoing"
   },
   {
@@ -18,7 +17,7 @@ const projects = [
     I have been exploring these questions from a Responsible AI perspective, in collaboration with clinical psychologists, AI ethicists, and mental health organizations. 
     Here are some of our ongoing efforts—both systems and frameworks—to better understand and situate AI's role in scaling therapy.`,
     system: "Cheeseburger Therapy: An accessible chat-based platform that provides peer support through Cognitive Behavioral Therapy (CBT) to scale mental health, a collaboration with the Cheese team.",
-    link: "#",
+    link: "https://cheeseburgertherapy.org/",
     publications: "related publications: AAAI'25, CHI'24, CSCW'24",
     type: "ongoing"
   },
@@ -31,7 +30,7 @@ const projects = [
     //data can serve as a mirror, helping people make sense of their digital histories in meaningful ways.
     //This work explores how personal data can serve as a mirror, enabling meaningful self-reflection through everyday digital traces.`,
     systems: "Sochiatrist: An ML-driven system for extracting, analyzing and visualizing social messaging to support data-driven self-reflection.",
-    link: "#",
+    link: "https://sochiatrist.cs.brown.edu/",
     type: "ongoing"
   },
   {
@@ -41,7 +40,7 @@ const projects = [
     social presence while reducing message-based cognitive 
     load.`, //Using mixed methods, the work highlights how tailored cues can enhance clarity, confidence, and social connection, with implications for inclusive messaging design.`,
     systems: "Live Typing: Real-time typing indicators designed to increasing social presence in messaging platforms.",
-    link: "#",
+    link: "https://github.com/brownhci/live-typing",
     publications: "related publications: CHI'23, CSCW'25",
     type: "past"
   }
