@@ -46,16 +46,15 @@ const projects = [
   }
 ];
 
-const pastProjects = [
-  // Past projects will be added here
-];
+const ongoingProjects = projects.filter(p => p.type === 'ongoing');
+const pastProjects = projects.filter(p => p.type === 'past');
 
 export default function Projects() {
   return (
     <section>
-      <h2 className="text-2xl font-normal">Projects</h2>
+      <h2 className="text-2xl font-normal">Ongoing Projects</h2>
       <div className="space-y-8 mt-4">
-        {projects.map((project, index) => (
+        {ongoingProjects.map((project, index) => (
           <div key={index}>
             <h3 className="font-semibold">{project.title}</h3>
             <blockquote className="border-l-4 border-gray-300 pl-4 mt-2 text-gray-600">
@@ -69,8 +68,18 @@ export default function Projects() {
       </div>
 
       <h2 className="text-2xl font-normal mt-10">Past Projects</h2>
-      <div className="space-y-4 mt-4">
-        {/* Past projects content goes here */}
+      <div className="space-y-8 mt-4">
+        {pastProjects.map((project, index) => (
+            <div key={index}>
+                <h3 className="font-semibold">{project.title}</h3>
+                <blockquote className="border-l-4 border-gray-300 pl-4 mt-2 text-gray-600">
+                {project.description}
+                </blockquote>
+                <a href={project.link} className="text-blue-600 hover:underline mt-2 inline-block">
+                systems: {project.system || project.systems} {project.publications && `| ${project.publications}`}
+                </a>
+            </div>
+        ))}
       </div>
     </section>
   );
