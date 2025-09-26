@@ -3,10 +3,10 @@ import React from 'react';
 const projects = [
   {
     title: "Integrating Responsible AI into the Workplace",
-    description: `As AI systems are adopted across workplaces (from programming to healthcare) they are reshaping decision-making, collaboration, and task delegation. 
-    This research examines how organizations can responsibly integrate AI into daily workflows while preserving human oversight, accountability, and trust. 
-    We study real-world deployments to assess the opportunities and risks of AI augmentation across sectors, including mental health. Using ethnographic studies, policy analysis, and design research, 
-    we explore how to embed AI into organizational cultures in ways that enhance human expertise and judgment.`,
+    description: `As AI systems are adopted across several workplaces (from programming to healthcare), they are reshaping decision-making, collaboration, and task delegation. How then can we develop AI systems that augment 
+    human expertise while preserving human oversight, accountability, and trust? Through ethnographic studies, policy analysis and design research, 
+    this research examines how organizations can responsibly integrate AI into daily workflows for real-world deployment
+    while centering human values and ethics.`,
     publications: "related publications: AAAI'25 (framework)",
     type: "ongoing"
   },
@@ -52,7 +52,7 @@ const pastProjects = projects.filter(p => p.type === 'past');
 export default function Projects() {
   return (
     <section>
-      <h2 className="text-2xl font-normal">Ongoing Projects</h2>
+      <h2 className="text-2xl font-normal">Active Projects</h2>
       <div className="space-y-8 mt-4">
         {ongoingProjects.map((project, index) => (
           <div key={index}>
@@ -75,9 +75,12 @@ export default function Projects() {
                 <blockquote className="border-l-4 border-gray-300 pl-4 mt-2 text-gray-600">
                 {project.description}
                 </blockquote>
-                <a href={project.link} className="text-blue-600 hover:underline mt-2 inline-block">
-                systems: {project.system || project.systems} {project.publications && `| ${project.publications}`}
-                </a>
+                <div>
+                  <a href={project.link} className="text-blue-600 hover:underline mt-2 inline-block">
+                    systems: {project.system || project.systems}
+                  </a>
+                  {project.publications && <span className="publication-style"> | {project.publications}</span>}
+                </div>
             </div>
         ))}
       </div>
