@@ -7,7 +7,7 @@ const projects = [
     What does it mean to responsibly use AI to support mental health? How can we build AI systems that augment not replace human mental health providers?
     I have been exploring these questions from a Responsible AI perspective, in collaboration with clinical psychologists, AI ethicists, and mental health organizations. 
     Here are some of our ongoing efforts—both systems and frameworks—to better understand and situate AI's role in scaling therapy.`,
-    system: `🍔 Cheeseburger Therapy: An accessible chat-based platform that provides peer support through Cognitive Behavioral Therapy (CBT) to scale mental health, 
+    system: `🍔 Cheeseburger Therapy: Cognitive Behavioral Therapy (CBT) provided by volunteer human counselors and prompted LLMs to scale mental health, 
     a collaboration with the Cheese team.`,
     link: "https://cheeseburgertherapy.org/",
     publications: "related publications: AAAI'25, CHI'24, CSCW'24",
