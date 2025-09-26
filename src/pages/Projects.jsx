@@ -39,7 +39,7 @@ const projects = [
   {
     title: "Accessible Cues for Increasing Social Presence in Messaging Platforms",
     description: `Messaging can be overwhelming. While typing cues reduce anxiety, they also increase pressure and stress. 
-    This line of my research explores customizable typing cues that balance information needs with privacy and autonomy, focusing on improving communication accessibility 
+    I develop novel open-source customizable typing cues to balance information needs with privacy, focusing on improving communication accessibility 
     while reducing message-based cognitive load.`, //Using mixed methods, the work highlights how tailored cues can enhance clarity, confidence, and social connection, with implications for inclusive messaging design.`,
     systems: "💬 Live Typing: Real-time typing indicators to increase social presence in messaging platforms.",
     link: "https://github.com/brownhci/live-typing",
