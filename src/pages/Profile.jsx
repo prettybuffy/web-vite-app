@@ -3,7 +3,7 @@ export default function Profile() {
     <section>
       <div className="flex-shrink-0 flex flex-col">
         <img 
-          src="/img/zainab.jpg"
+          src="/img/headshot.jpg"
           alt="Zainab Iftikhar"
           className="w-72 py-1 object-cover mx-autoshadow-md"
         />
