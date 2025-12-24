@@ -2,6 +2,14 @@ import React from 'react';
 
 const news = [
  {
+    title: "Led the Workshop on the Use of AI and LLMs in Social Science Research at APS",
+    date: "Oct 22, 2025"
+ },
+ {
+    title: "Invited Talk: Integrating AI Into the Mental Health Sector at the Association for Psychological Science (APS)",
+    date: "Oct 22, 2025"
+ },
+ {
     title: "Nominated (Twice!) as 1 of 4 PhD Students University-Wide at Brown for Google PhD Fellowship (Year 2024, Year 2025)",
     date: "Aug 30, 2025"
  },
